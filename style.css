@@ -1,0 +1,51 @@
+*{
+    margin: 2px;
+    padding: 0;
+
+}
+
+.main-form{
+    background-color: rgb(209, 209, 209);
+    width: 500px;
+}
+.form-row {
+    margin-bottom: 30px;
+}
+label,input{
+    display: block;
+    width: 30%;
+}
+input{
+    border-radius: 3px;
+}
+label{
+    margin-bottom: 10px
+}
+
+
+input:invalid:required{
+    border: 1px solid #d55c5f;
+    color: #d55c5f;
+}
+input:valid{
+    border-color: black;
+}
+button{
+    background-color: #596D48;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+
+    display: block;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row input[type="tel"],
+.form-row input[type="password"]{
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #d6d9dc;
+
+}
