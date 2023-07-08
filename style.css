@@ -1,51 +1,77 @@
-*{
-    margin: 2px;
+body, html {
+    height: 100%;
+    margin: 0;
     padding: 0;
-
 }
 
-.main-form{
-    background-color: rgb(209, 209, 209);
-    width: 500px;
+.container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.banner {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-form {
+    flex: 1;
+    padding: 20px;
+}
+
+.main-form span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.main-form form {
+    display: flex;
+    flex-direction: column;
+}
+
 .form-row {
-    margin-bottom: 30px;
-}
-label,input{
-    display: block;
-    width: 30%;
-}
-input{
-    border-radius: 3px;
-}
-label{
-    margin-bottom: 10px
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
 }
 
-
-input:invalid:required{
-    border: 1px solid #d55c5f;
-    color: #d55c5f;
-}
-input:valid{
-    border-color: black;
-}
-button{
-    background-color: #596D48;
-    width: 200px;
-    height: 50px;
-    border-radius: 10px;
-    color: white;
-
-    display: block;
+.form-row label {
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
-.form-row input[type="text"],
-.form-row input[type="email"],
-.form-row input[type="tel"],
-.form-row input[type="password"]{
+.form-row input {
     padding: 5px;
-    font-size: 14px;
-    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
 
+.form-row input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.form-row input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.form-row p {
+    margin: 0;
+}
+
+.form-row a {
+    color: #007bff;
+    text-decoration: none;
 }
