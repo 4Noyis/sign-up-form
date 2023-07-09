@@ -1,60 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
+      <div class="banner">
+        <div>
+          <img src="./odin-lined.png" alt="The Odin Project Logo" />
+          <h1>Sign-up Form</h1>
+        </div>
+      </div>
 
-        <div class="banner">
-            <img src="./image.jpg" alt="">
+      <div class="form-section">
+        <div class="form-header">
+          <div>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam
+              dignissimos quis alias fugit id, ducimus ab eos mollitia vel
+              minus?
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="input-section">
+            <form action="#" method="get" class="sign-form">
+              <label for="firsname" class="inline"
+                >FIRST NAME
+                <input
+                  class="inline"
+                  type="text"
+                  id="firstname"
+                  name="firstname"
+                  minlength="3"
+                  maxlength="30"
+                  required
+                />
+              </label>
+
+              <label class="inline" for="lastname"
+                >LAST NAME
+                <input
+                  class="inline"
+                  type="text"
+                  id="lastname"
+                  class="error"
+                  name="lastname"
+                  minlength="3"
+                  maxlength="30"
+                  required
+                />
+              </label>
+
+              <label for="email"
+                >EMAIL
+                <input
+                  type="email"
+                  id="email"
+                  class="error"
+                  name="email"
+                  placeholder="joe@mail.com"
+                  required
+                />
+              </label>
+
+              <label for="phone"
+                >PHONE NUMBER
+                <input
+                  type="tel"
+                  id="phone"
+                  class="error"
+                  name="phone-number"
+                  required
+                  pattern="[0-9]{10}"
+                />
+              </label>
+
+              <label for="password"
+                >PASSWORD
+                <input
+                  type="password"
+                  id="password"
+                  class="error"
+                  name="password"
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                  required
+                />
+              </label>
+
+              <label for="c-password"
+                >CONFIRM PASSWORD
+                <input
+                  type="password"
+                  id="c-password"
+                  class="error"
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                  required
+                />
+              </label>
+            </form>
+          </div>
         </div>
 
- 
-        <div class="main-form">
-            <span><p>Let's do this!</p></span>
-
-            <form action="#" method="get" class="sign-form">
-                <div class="form-row">
-                    <label for="name">FIRST NAME</label>
-                    <input type="text" id="name" name="name" minlength="3" maxlength="30" >
-                </div>
-                
-                <div class="form-row">
-                 <label for="surname">LAST NAME</label>
-                 <input type="text" id="surname" name="surname" minlength="3" maxlength="30" >
-                </div>
-
-               <div class="form-row">
-                <label for="email">EMAIL</label>
-                <input type="email" id="email" name="email" placeholder="joe@mail.com" >
-               </div>
-
-               <div class="form-row">
-                <label for="phone">PHONE NUMBER</label>
-                <input type="tel" id="phone" name="phone-number">
-               </div>
-
-               <div class="form-row">
-                <label for="password">PASSWORD</label>
-                <input type="password" id="password" name="password" required>
-               </div>
-               <div class="form-row">
-                <label for="c-password">CONFIRM PASSWORD</label>
-                <input type="password" id="c-password" required>
-               </div>
-
-               <button type="submit">CREATE ACCOUNT</button>
-               <span><p>Already have an account? <a href="#">log in</a></p></span>
-            </form>
-
-        </div>  
-    
+        <div class="submit-section">
+          <div>
+            <button type="submit">CREATE ACCOUNT</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
