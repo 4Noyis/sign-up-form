@@ -129,7 +129,10 @@ input:invalid:focus{
 input:focus:valid{
     border: rgb(0, 183, 255) 2px solid;
 }
-  
+input[type="password"]{
+    border: solid rgb(225, 69, 100);
+
+}
 
 /*---------submit-section----------*/
 button[type='submit'] {
@@ -148,8 +151,8 @@ button[type='submit'] {
   }
 
 a {
-    text-decoration: none;
-    color: rgb(173, 73, 173);
+
+    color: #596D48;
   }
   .submit-section {
     margin-top: 2rem;
